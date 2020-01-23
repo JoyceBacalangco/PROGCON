@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ROSEANN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-15 07:51:14 PM"/>
+        <attribute name="created" value="Uk9TRUFOTjtST1NFQU5OLVBDOzIwMTktMTItMjI7MTI6MDg6MDEgQU07MjUyMA=="/>
+        <attribute name="edited" value="QmFjYWxhbmdjbyBGYW1pbHk7IEpPWUNFQkFDQUxBTkdDTzsgMjAyMC0wMS0xNTsgMDc6NTE6MTQgUE07IDQwNzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="who" type="Integer" array="False" size=""/>
+            <declare name="guess" type="Integer" array="False" size=""/>
+            <assign variable="who" expression="random(300) +1"/>
+            <output expression="&quot;please enter a guess between 1 and 300&quot;"/>
+            <do expression="guess != who">
+                <input variable="guess"/>
+                <if expression="guess&gt;who">
+                    <then>
+                        <output expression="&quot;your guess is too High&quot;"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="guess&lt;who">
+                    <then>
+                        <output expression="&quot;your guess is too LOW&quot;"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;correct!&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

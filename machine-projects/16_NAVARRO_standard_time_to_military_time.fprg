@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="my pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-10 09:05:45 AM"/>
+        <attribute name="created" value="bXkgcGM7REVTS1RPUC03VDdUSDFTOzIwMjAtMDEtMDY7MDI6MzU6NTcgUE07MjgxNQ=="/>
+        <attribute name="edited" value="bXkgcGM7REVTS1RPUC03VDdUSDFTOzIwMjAtMDEtMDY7MDI6NTg6NDIgUE07MTsyOTIy"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzI7MjAyMC0wMS0xMDswOTowNTo0NSBBTTs1OzIyOTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="time" type="Real" array="False" size=""/>
+            <declare name="am" type="String" array="False" size=""/>
+            <declare name="pm" type="String" array="False" size=""/>
+            <declare name="response" type="String" array="False" size=""/>
+            <output expression="&quot;am or pm?&quot;" newline="True"/>
+            <input variable="Response"/>
+            <if expression="Response = &quot;am&quot;">
+                <then>
+                    <output expression="&quot;enter time&quot;" newline="True"/>
+                    <input variable="time"/>
+                    <if expression="Time&gt;1159.99">
+                        <then>
+                            <assign variable="Time" expression="Time-1200"/>
+                            <output expression="&quot;000&quot;&amp;time&amp;&quot; H &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="Time" expression="Time"/>
+                            <output expression="Time&amp; &quot; H &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;enter time&quot;" newline="True"/>
+                    <input variable="time"/>
+                    <if expression="Time&gt;1159.99">
+                        <then>
+                            <assign variable="Time" expression="Time"/>
+                            <output expression="time&amp;&quot; H &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="Time" expression="Time+1200"/>
+                            <output expression="Time&amp; &quot; H &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

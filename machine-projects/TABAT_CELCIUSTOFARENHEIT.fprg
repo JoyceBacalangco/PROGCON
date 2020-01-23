@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-16 04:44:29 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMjk7MjAxOS0xMC0yOTswNzo1MjoyMCBBTTsyMjA0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjk7MjAxOS0xMC0yOTswODoyOTo1MiBBTTszOzIzMjQ="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzU7MjAxOS0xMi0xNjswNDo0NDoyOSBQTTszOzIzMzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome! This is a program for converting to degree celcius to degreen farenheit.&quot;" newline="True"/>
+            <declare name="Number1" type="Integer" array="False" size=""/>
+            <declare name="Celcius" type="Real" array="False" size=""/>
+            <declare name="Farenheit" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter a degree celcius.&quot;" newline="True"/>
+            <input variable="Number1"/>
+            <assign variable="Farenheit" expression="Number1 * 9/5 + 32"/>
+            <output expression="&quot;The answer is...&quot;" newline="True"/>
+            <output expression="Farenheit" newline="True"/>
+            <output expression="&quot;Farenheit&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

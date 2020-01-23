@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-16 04:43:09 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMjk7MjAxOS0xMC0yOTswNzo1MjoyMCBBTTsyMjA0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjk7MjAxOS0xMC0yOTswODoyOTo1MiBBTTszOzIzMjQ="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzU7MjAxOS0xMi0xNjswNDo0MzowOSBQTTszOzIzMjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome! This is a program for conveting FEET to INCHES.&quot;" newline="True"/>
+            <declare name="Number1" type="Integer" array="False" size=""/>
+            <declare name="Inches" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter a ft.&quot;" newline="True"/>
+            <input variable="Number1"/>
+            <assign variable="Inches" expression="Number1*12"/>
+            <output expression="&quot;The answer is...&quot;" newline="True"/>
+            <output expression="Inches" newline="True"/>
+            <output expression="&quot;inches&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

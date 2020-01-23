@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-19 04:25:29 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMjk7MjAxOS0xMC0yOTswNzo1MjoyMCBBTTsyMjA0"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjk7MjAxOS0xMC0yOTswODoyOTo1MiBBTTszOzIzMjQ="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzU7MjAxOS0xMi0xOTswNDoyNToyOSBQTTs1OzIzMzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome! This is a program for conveting US DOLLAR to PH PESOS and VICE VERSA.&quot;" newline="True"/>
+            <declare name="Number1" type="Integer" array="False" size=""/>
+            <declare name="Pesos" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter a $.&quot;" newline="True"/>
+            <input variable="Number1"/>
+            <assign variable="Pesos" expression="Number1*0.020"/>
+            <output expression="&quot;The answer is...&quot;" newline="True"/>
+            <output expression="Pesos" newline="True"/>
+            <output expression="&quot;PESOS&quot;" newline="True"/>
+            <output expression="&quot;Now enter a &#8369;.&quot;" newline="True"/>
+            <declare name="Number2" type="Integer" array="False" size=""/>
+            <declare name="Dollars" type="Real" array="False" size=""/>
+            <input variable="Number2"/>
+            <assign variable="Dollars" expression="Number2*50.63"/>
+            <output expression="&quot;The answer is...&quot;" newline="True"/>
+            <output expression="Dollars" newline="True"/>
+            <output expression="&quot;DOLLARS&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
